@@ -2,6 +2,8 @@
 
 
 import 'package:apiprojectfirst/Component/Homepage.dart';
+import 'package:apiprojectfirst/Component/Photodetailes.dart';
+import 'package:apiprojectfirst/Model/Photots.dart';
 import 'package:flutter/material.dart';
 
 import 'RouterPath.dart';
@@ -14,7 +16,8 @@ MaterialPageRoute? materialPageRoute(RouteSettings settings){
       widget = const HomePage();
       break;
     case RouterPath.detailpage:
-
+      Photos photo=settings.arguments as Photos;
+      widget=Photodetails(photos: photo);
       break;
 
   }
