@@ -1,11 +1,11 @@
-class Temperatures {
+class Photos {
   int albumId;
   int id;
   String title;
   String url;
   String thumbnailUrl;
 
-  Temperatures({
+  Photos({
     required this.albumId,
     required this.id,
     required this.title,
@@ -13,8 +13,8 @@ class Temperatures {
     required this.thumbnailUrl,
   });
 
-  factory Temperatures.fromJson(Map<String, dynamic> json) {
-    return Temperatures(
+  factory Photos.fromJson(Map<String, dynamic> json) {
+    return Photos(
       albumId: json["albumId"],
       id: json["id"],
       title: json["title"],
